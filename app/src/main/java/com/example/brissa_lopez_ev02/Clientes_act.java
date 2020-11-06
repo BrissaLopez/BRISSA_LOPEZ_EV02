@@ -92,6 +92,8 @@ public class Clientes_act extends AppCompatActivity {
         }
     }
 
+    //falta agregar condiciones de eliminado
+
     public void eliminarCliente(View v){
         admin = new AdminSQLiteOpenHelper(this, "bancoBPM", null, 1);
         bd = admin.getWritableDatabase();
