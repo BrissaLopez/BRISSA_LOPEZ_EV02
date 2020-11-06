@@ -63,6 +63,8 @@ public class Home_act extends AppCompatActivity {
     public void anadeClientes(){
         cliente.add("Axel");
         cliente.add("Roxana");
+        cliente.add("Betzabé");
+        cliente.add("Matías");
     }
 
     public void anadeCredito(){
