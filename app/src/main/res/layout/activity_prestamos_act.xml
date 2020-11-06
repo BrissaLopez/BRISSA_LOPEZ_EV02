@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".Prestamos_act">
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="737dp"
+        android:layout_marginTop="47dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            app:srcCompat="@drawable/dinero" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="57dp" />
+
+        <Spinner
+            android:id="@+id/spin1"
+            android:layout_width="300dp"
+            android:layout_height="59dp" />
+
+        <Spinner
+            android:id="@+id/spin2"
+            android:layout_width="300dp"
+            android:layout_height="59dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="162dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="saldoClientes"
+                    android:text="CALCULAR PRÉSTAMO" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="calcularDeudas"
+                    android:text="CALCULAR DEUDAS" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_prest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
